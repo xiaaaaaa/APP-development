@@ -3,24 +3,28 @@
     font-family: "Noto Sans", sans-serif;
     font-size: 44px;
     line-height: normal;
+    font-weight: 900;
 }
 
 .Head2{
     font-family: "Noto Sans", sans-serif;
     font-size: 16px;
     line-height: 150%;
+    font-weight: 900;
 }
 
 .Text1{
     font-family: "Noto Sans", sans-serif;
     font-size: 14px;
     line-height: normal;
+    font-weight: 700;
 }
 
 .Text2{
     font-family: "Noto Sans", sans-serif;
     font-size: 12px;
     line-height: 150%;
+    font-weight: 400;
 }
 
 /*body*/
