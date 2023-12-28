@@ -13,7 +13,10 @@ document.getElementById('explain-page1').style.visibility = 'hidden';
 document.getElementById('explain-page2').style.visibility = 'hidden';
 document.getElementById('explain-page3').style.visibility = 'hidden';
 document.getElementById('explain-page4').style.visibility = 'hidden';
-
+document.getElementById('how-to-play1').style.visibility = 'hidden';
+document.getElementById('how-to-play2').style.visibility = 'hidden';
+document.getElementById('how-to-play3').style.visibility = 'hidden';
+document.getElementById('all-darken').style.visibility = 'hidden';
 
 document.getElementById('to-d').style.visibility = 'hidden';
 
@@ -94,10 +97,7 @@ btn_cross4.addEventListener("click", function(){
     document.getElementById('explain-page4').style.visibility = 'hidden';
     document.getElementById('all-darken').style.visibility = 'hidden';
 });
-btn_cross5.addEventListener("click", function(){
-    document.getElementById('explain-page5').style.visibility = 'hidden';
-    document.getElementById('all-darken').style.visibility = 'hidden';
-});
+
 
 
 

@@ -3,7 +3,7 @@ body{
     position: relative;
     /* max-width: 1440px; */
     width: 1440px;
-    height: 1024px;
+    max-height: 1024px;
     margin: auto;
     font-family: "Noto Sans", sans-serif;
 }
@@ -71,9 +71,11 @@ body{
 
 /* 沙發 */
 .clue1{
+    
     z-index: 3;
     background-color: transparent;
-    border: transparent;
+    border: #000000 solid 2px;
+    /* border: transparent; */
     position: absolute;
     width: 248px;
     height: 366px;
@@ -245,10 +247,163 @@ body{
 .all-darken{
     z-index: 3;
     width: 1440px;
-    height: 1034px;
+    height: 1024px;
     position: absolute;
-    top: -10px;
+    top: 0px;
     right: 0px;
     background: rgba(35, 35, 35, 0.40);
     background-blend-mode: multiply;
+    margin: 0;
 }
+
+.how-to-play1{
+    width: 925px;
+    height: 540px;
+    z-index: 99;
+    position: absolute;
+    top: 242px;
+    right: 271px;
+    border-radius: 20px;
+    background: #F9F9F9;
+    box-shadow: 0px 30px 10px 0px rgba(0, 0, 0, 0.40);
+}
+
+.how-to-play-description{
+    margin-left: 78px;
+    margin-bottom: 0;
+    color: #1E1E1E;
+    text-align: left;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.52px;
+}
+
+.content1-img{
+    margin-left: 78px;
+    margin-top: 74px;
+    margin-right: 69px;
+}
+
+.next-page1{
+    border-radius: 18px;
+    border: 3px solid #2D1B0F;
+    background: #FFD749;
+    width: 150px;
+    height: 59.6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #2D1B0F;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%; /* 42px */
+    margin-top: 30px;
+    margin-left: 735px;
+    filter: drop-shadow(0px 9px 4.8px rgba(0, 0, 0, 0.50));
+}
+
+.next-page1:hover{
+    background: #ebc642;
+    box-shadow: 0px 15px 20px 0px rgba(85, 38, 12, 0.564) inset;
+    filter: drop-shadow(0px 14px 4.8px rgba(0, 0, 0, 0));
+    transition:all .1s;
+}
+
+
+.how-to-play2{
+    width: 925px;
+    height: 540px;
+    z-index: 99;
+    position: absolute;
+    top: 242px;
+    right: 271px;
+    border-radius: 20px;
+    background: #F9F9F9;
+    box-shadow: 0px 30px 10px 0px rgba(0, 0, 0, 0.40);
+}
+
+.content2-img{
+    margin-left: 266px;
+    margin-top: 49px;
+    margin-right: 263px;
+}
+
+.next-page2{
+    border-radius: 18px;
+    border: 3px solid #2D1B0F;
+    background: #FFD749;
+    width: 150px;
+    height: 59.6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #2D1B0F;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%; /* 42px */
+    margin-top: 10px;
+    margin-left: 735px;
+    filter: drop-shadow(0px 9px 4.8px rgba(0, 0, 0, 0.50));
+}
+
+.next-page2:hover{
+    background: #ebc642;
+    box-shadow: 0px 15px 20px 0px rgba(85, 38, 12, 0.564) inset;
+    filter: drop-shadow(0px 14px 4.8px rgba(0, 0, 0, 0));
+    transition:all .1s;
+}
+
+.how-to-play3{
+    width: 925px;
+    height: 540px;
+    z-index: 99;
+    position: absolute;
+    top: 242px;
+    right: 271px;
+    border-radius: 20px;
+    background: #F9F9F9;
+    box-shadow: 0px 30px 10px 0px rgba(0, 0, 0, 0.40);
+}
+
+.content3-img{
+    margin-left: 266px;
+    margin-top: 30px;
+    margin-right: 263px;
+}
+
+.start-game{
+    border-radius: 18px;
+    border: 3px solid #2D1B0F;
+    background: #FFD749;
+    width: 236px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #2D1B0F;
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%; /* 42px */
+    margin-top: 10px;
+    margin-left: 344px;
+    filter: drop-shadow(0px 9px 4.8px rgba(0, 0, 0, 0.50));
+}
+
+.start-game:hover{
+    background: #ebc642;
+    box-shadow: 0px 15px 20px 0px rgba(85, 38, 12, 0.564) inset;
+    filter: drop-shadow(0px 14px 4.8px rgba(0, 0, 0, 0));
+    transition:all .1s;
+}
+
