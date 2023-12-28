@@ -618,47 +618,100 @@ footer{
 
 /* 場景&道具 */
 .place{
-
+    width: 1281px;
+    margin-top: 357px;
 }
 
 .place-title{
-
+    width: 464px;
+    height: 71px;   
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction:column;
+    justify-items: center;
+    align-items: center;
 }
 
 .title-p{
-
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    margin-bottom: 7px;
 }
 
 .scenes{
-
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 52px;
+    display: flex;
+    flex-direction:column;
+    justify-items: center;
+    align-items: center;
 }
 
 .scenes-pic{
-
+    width: 640px;
+    height: 454.29px;
 }
 
 .props{
-
+    /* margin-left: auto;
+    margin-right: auto; */
+    width: 1281px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content:center;
+    justify-content:space-between;
+    margin-top: 52.7px;
 }
 
 .props-card{
+    width: 300px;
+    height: 585px;
+    margin-bottom: 120px;
+    /* margin-left: 13px;
+    margin-right: 13px; */
+}
 
+.props-pic{
+    width: 300px;
+    height: 300px;
 }
 
 .card-text{
-
+    height: 249px;
+    margin-top: 36px;
 }
 
 .card-text-title{
-
+    height: 33px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction:column;
+    justify-items:flex-start;
+    align-items: flex-start;
 }
 
 .card-text-title-p{
-
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%;
+    margin: 0;
 }
 
 .card-text-explain{
-    
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 31px;
 }
 
 /* 場景&道具end */
