@@ -13,3 +13,19 @@ function password(pwd){
     alert("ACCESS DENIED!");
   }
   }
+
+  window.addEventListener('scroll', () => {
+    const scrollPositionY = window.pageYOffset;
+    const layer0 = document.querySelector('.keyart-layer0');
+    const layer1 = document.querySelectorAll('.keyart-layer1');
+    const layer2 = document.querySelectorAll('.keyart-layer2');
+    //const parallaxScrollingElements = [...stars, moon];
+    const parallaxScrollingElements = [keyart-layer0, keyart-layer1, keyart-layer2];
+  
+    parallaxScrollingElements.forEach((element) => {
+      const elementMoveSpeed = Number(element.dataset.speed);
+      element.style.transform = `
+        translateY(${scrollPositionY * elementMoveSpeed}px)
+      `;
+    });
+  });
