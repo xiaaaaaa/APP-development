@@ -1,3 +1,5 @@
+
+
 /*H頁每頁都會用到的*/
 .container{
     display: flex;
@@ -552,3 +554,28 @@ footer{
     }
 }
 /*關於我們end*/
+@media screen and (max-width:768px){
+    .about-us{
+        flex-direction: column;
+    }
+    .about-xin{
+        margin-bottom: 10%;
+    }
+    .H-content-word{
+        text-align: center;
+    }
+    .help{
+        flex-direction: column;
+    }
+    .help1{
+        margin-bottom: 10%;
+    }
+    .help2{
+        margin-bottom: 10%;
+    }
+}
+@media (max-width:680px){
+    .nav-btn{
+        display:none;
+    }
+}
