@@ -14,6 +14,7 @@
     align-items: center;
     margin-top: 20%;
     width:70%;
+    position:absolute;
 }
 /*width="1017" height="707"*/
 .story{
@@ -23,7 +24,7 @@
     align-items: center;
 }
 .story-pic{
-    width:100%;
+    width:80%;
     box-shadow: 0px 64px 141.3px 0px rgba(255, 255, 255, 0.50);
 }
 .story-word{
@@ -38,6 +39,15 @@
     margin-bottom:20%;
     margin-top:5%;
 }
+/*視差滾動start*/
+.para{
+    position:absolute;
+
+}
+.para-pic{
+    width:100%;
+}
+/*視差滾動end*/
 .recieve{
     display:flex;
     flex-direction: column;
@@ -114,11 +124,12 @@
     width:100%;
 }
 footer{
+    width:auto;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+
     height: 45px;
     flex-shrink: 0;
     background: #FFD84F;
