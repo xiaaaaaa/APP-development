@@ -10,6 +10,9 @@ const btn_cross6 = document.querySelector("#cross6");
 const btn_cross7 = document.querySelector("#cross7");
 const btn_cross8 = document.querySelector("#cross8");
 const btn_cross9 = document.querySelector("#cross9");
+const btn_nextpage4 = document.querySelector("#how-to-play4-btn");
+const btn_nextpage5 = document.querySelector("#how-to-play5-btn");
+const btn_nextpage6 = document.querySelector("#how-to-play6-btn");
 document.getElementById('variable').textContent = variable;
 document.getElementById('explain-page5').style.visibility = 'hidden';
 document.getElementById('explain-page6').style.visibility = 'hidden';
@@ -119,6 +122,23 @@ btn_cross9.addEventListener("click", function(){
     document.getElementById('all-darken').style.visibility = 'hidden';
 });
 
+
+
+btn_nextpage4.addEventListener("click", function(){
+    document.getElementById('how-to-play4').style.visibility = 'hidden';
+    document.getElementById('how-to-play5').style.visibility = 'visible';
+});
+btn_nextpage5.addEventListener("click", function(){
+  document.getElementById('how-to-play5').style.visibility = 'hidden';
+  document.getElementById('how-to-play6').style.visibility = 'visible';
+});
+btn_nextpage6.addEventListener("click", function(){
+  document.getElementById('how-to-play6').style.visibility = 'hidden';
+  document.getElementById('all-darken').style.visibility = 'hidden';
+});
+
+
+
 // ---------------------------
 // 判斷 newbies 變數的值
 function checkAndModifyNewbiesVariable() {
@@ -127,12 +147,15 @@ function checkAndModifyNewbiesVariable() {
       .split('=')[1];
   
     if (newbiesValue === '0') {
-      document.getElementById('explain-page10').style.visibility = 'visible';
+      
+      document.getElementById('how-to-play4').style.visibility = 'visible';
+      document.getElementById('all-darken').style.visibility = 'visible';
+      
       // 做不同的行為，例如修改 newbies 變數為 1
       document.cookie = 'newbies=1; expires=Thu, 01 Jan 2030 00:00:00 UTC; path=/';
       
     } else {
-        document.getElementById('explain-page10').style.visibility = 'hidden';
+        document.getElementById('how-to-play4').style.visibility = 'hidden';
     }
   }
   
@@ -140,3 +163,4 @@ function checkAndModifyNewbiesVariable() {
   setNewbiesVariableToZero();
   
 //----------------------------
+  
