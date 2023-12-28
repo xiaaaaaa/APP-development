@@ -26,6 +26,12 @@
     align-items: center;
     justify-content:end;
 }
+.burger{
+    position:absolute;
+    left: 80%;
+    top: 20%;
+    display: none;
+}
 /*關於我們按鈕*/
 .btn-about{
     display: flex;
@@ -577,5 +583,17 @@ footer{
 @media (max-width:680px){
     .nav-btn{
         display:none;
+    }
+    .burger{
+        display: block;
+        margin-right: 5%;
+    }
+}
+@media (max-width:565px){
+    .nav-logo{
+        display: none;
+    }
+    .burger{
+        margin-top: 5%;
     }
 }
