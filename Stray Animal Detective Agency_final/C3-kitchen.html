@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>流浪動物偵探社 Stray Animal Detective Agency | XIN XIA</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/">
+    <link rel="stylesheet" href="css/C3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 正文 -->
+    <img src="img/C/廚房.jpg" alt="backround" class="backround">
+    
+    <p class="game-introdution">點點看那些你覺得可疑的地方吧！</p>
+
+    <div class="clue-count">
+        <img src="img/C/ivestigation.png" alt="ivestigation" class="ivestigation">
+        <p class="ivestigation-num"><span id="variable"></span>/4</p>
+    </div>
+
+    <button class="question"><img src="img/C/question.png" alt="question" ></button>
+
+    <div class="head-darken">
+        <p class="head-darken"> </p>
+    </div>
+
+    <div class="clue">
+        <button class="clue1" id="clue10"></button>
+        <button class="clue2" id="clue11"></button>
+        <button class="clue3" id="clue12"></button>
+        <button class="clue4" id="clue13"></button>
+    </div>
+
+    <button id="to-d" >
+        <a href="B.html" class="to-d">恭喜！你已找到所有線索</a>
+    </button>
+
+    <div class="all-darken" id="all-darken">
+        <p class="all-darken"> </p>
+    </div>
+
+    <!-- 線索介紹頁面 -->
+    
+    <div class="how-to-play1" id="how-to-play7">
+        <p class="how-to-play-description">目標 ： 找到所有的線索</p>
+        <img src="img/C/howtoplay1.png" alt="content" class="content1-img">
+        <button class="next-page1" id="how-to-play4-btn">下一頁</button>
+    </div>
+    <div class="how-to-play2" id="how-to-play8">
+        <p class="how-to-play-description">方法 ： 點點你覺得可疑的地方</p>
+        <img src="img/C/howtoplay2.png" alt="content" class="content2-img">
+        <button class="next-page2" id="how-to-play5-btn">下一頁</button>
+    </div>
+    <div class="how-to-play3" id="how-to-play9">
+        <p class="how-to-play-description">還不知道怎麼玩？</p>
+        <img src="img/C/howtoplay3.png" alt="content" class="content3-img">
+        <button class="start-game" id="how-to-play6-btn">開始調查吧！</button>
+    </div>
+    
+    <!-- <---------------> 
+
+
+    <div class="explain-page" id="explain-page10">
+        <button class="cross" id="cross10"><img src="img/C/close_ring.png" alt="cross"></button>
+        <img src="img/C/廚房-零食.bmp" alt="" class="explain-page-img">
+        <div class="text">
+            <p class="title">發現: 被咬過的零食</p>
+            <p class="explain">
+                許多零食包裝被咬開<br>所剩的食物不多<br><br>
+                周圍都是餅乾屑與包裝<br>這裡像是蝗蟲過境...<br><br>
+                還有被咬一半的巧克力！
+            </p>
+        </div>
+    </div>
+
+    <div class="explain-page" id="explain-page11">
+        <button class="cross" id="cross11"><img src="img/C/close_ring.png" alt="cross"></button>
+        <img src="img/C/廚房-小狗.bmp" alt="" class="explain-page-img">
+        <div class="text">
+            <p class="title">發現: 瘦弱的幼犬</p>
+            <p class="explain">
+                角落發現一隻幼犬<br>毛色讓他隱身在黑暗中<br><br>
+                微弱的呼吸<br>無法正常行走的四肢<br>
+                皮包骨的樣子<br>不禁讓人憐憫
+            </p>
+        </div>
+    </div>
+
+    <div class="explain-page" id="explain-page12">
+        <button class="cross" id="cross12"><img src="img/C/close_ring.png" alt="cross"></button>
+        <img src="img/C/廚房-橘色水管.bmp" alt="" class="explain-page-img">
+        <div class="text">
+            <p class="title">發現: 橘色水管</p>
+            <p class="explain">
+                一段長60公分的水管<br>尾端被剪成條狀<br>
+                細看上面還有狗毛附著
+            </p>
+        </div>
+    </div>
+
+    <div class="explain-page" id="explain-page13">
+        <button class="cross" id="cross13"><img src="img/C/close_ring.png" alt="cross"></button>
+        <img src="img/C/廚房-帽子.bmp" alt="" class="explain-page-img">
+        <div class="text">
+            <p class="title">發現: 淺藍鴨舌帽</p>
+            <p class="explain">
+                瓦斯爐旁擺著突兀的藍色鴨舌帽<br>被匆匆隨意地丟在廚房<br>
+                莫非是此屋主的主人忙到隨手一丟？<br><br>
+                也許... 這就是破案關鍵？！
+            </p>
+        </div>
+    </div>
+
+
+    
+    <script src="js/C-3_scrip.js"></script>
+    <script src="cookies.js"></script>
+</body>
+</html>
+
+
