@@ -187,8 +187,8 @@
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    /* margin-top: 7%;
-    margin-bottom: 7%; */
+    margin-top: 7%;
+    margin-bottom: 7%;
     /*text*/
     color: #000;
     font-family: 'Noto Sans', sans-serif;
@@ -501,7 +501,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     width:80%;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-bottom:10%;
 }
 .about-xin{
