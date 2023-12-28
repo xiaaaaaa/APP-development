@@ -24,6 +24,12 @@
     align-items: center;
     justify-content:end;
 }
+.burger{
+    position:absolute;
+    left: 80%;
+    top: 20%;
+    display: none;
+}
 /*關於我們按鈕*/
 .btn-about{
     display: flex;
@@ -620,6 +626,10 @@ footer{
 .place{
     width: 1281px;
     margin-top: 357px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .place-title{
@@ -661,7 +671,7 @@ footer{
 .props{
     /* margin-left: auto;
     margin-right: auto; */
-    width: 1281px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-content:center;
@@ -676,7 +686,11 @@ footer{
     /* margin-left: 13px;
     margin-right: 13px; */
 }
-
+.props-card1{
+    display: flex;
+    flex-direction: row;
+    gap: 7%;
+}
 .props-pic{
     width: 300px;
     height: 300px;
@@ -715,3 +729,48 @@ footer{
 }
 
 /* 場景&道具end */
+@media screen and (max-width:768px){
+    .about-us{
+        flex-direction: column;
+    }
+    .about-xin{
+        margin-bottom: 10%;
+    }
+    .H-content-word{
+        text-align: center;
+    }
+    .help{
+        flex-direction: column;
+    }
+    .help1{
+        margin-bottom: 10%;
+    }
+    .help2{
+        margin-bottom: 10%;
+    }
+    .nav-btn{
+        display:none;
+    }
+    .burger{
+        display: block;
+        margin-right: 5%;
+    }
+}
+@media screen and (max-width:1000px){
+    .props{
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width:565px){
+    .nav-logo{
+        display: none;
+    }
+    .burger{
+        margin-top: 5%;
+    }
+    .props-card1{
+        flex-direction: column;
+    }
+}

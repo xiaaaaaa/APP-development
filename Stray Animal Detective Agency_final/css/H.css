@@ -1,3 +1,5 @@
+
+
 /*H頁每頁都會用到的*/
 .container{
     display: flex;
@@ -23,6 +25,12 @@
     flex-direction: row;
     align-items: center;
     justify-content:end;
+}
+.burger{
+    position:absolute;
+    left: 80%;
+    top: 20%;
+    display: none;
 }
 /*關於我們按鈕*/
 .btn-about{
@@ -552,3 +560,40 @@ footer{
     }
 }
 /*關於我們end*/
+@media screen and (max-width:768px){
+    .about-us{
+        flex-direction: column;
+    }
+    .about-xin{
+        margin-bottom: 10%;
+    }
+    .H-content-word{
+        text-align: center;
+    }
+    .help{
+        flex-direction: column;
+    }
+    .help1{
+        margin-bottom: 10%;
+    }
+    .help2{
+        margin-bottom: 10%;
+    }
+}
+@media (max-width:680px){
+    .nav-btn{
+        display:none;
+    }
+    .burger{
+        display: block;
+        margin-right: 5%;
+    }
+}
+@media (max-width:565px){
+    .nav-logo{
+        display: none;
+    }
+    .burger{
+        margin-top: 5%;
+    }
+}
