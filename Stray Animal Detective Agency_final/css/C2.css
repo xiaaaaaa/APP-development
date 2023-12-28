@@ -69,54 +69,65 @@ body{
     z-index: 3;
 }
 
-/* 沙發 */
+/* 醫療箱 */
 .clue1{
-    
     z-index: 3;
     background-color: transparent;
-    border: #000000 solid 2px;
-    /* border: transparent; */
+    /* border: #000000 solid 2px; */
+    border: transparent;
     position: absolute;
-    width: 248px;
-    height: 366px;
-    top: 175px;
-    left: 720px;
+    width: 266px;
+    height: 240px;
+    top: 440px;
+    left: 91px;
 }
 
-/* 尿布墊 */
+/* 狗籠 */
 .clue2{
     z-index: 3;
     background-color: transparent;
-    border: transparent;
+    border:transparent;
     position: absolute;
-    width: 279px;
-    height: 250px;
-    top: 498px;
-    left: 354px;
+    width: 286px;
+    height: 561px;
+    top: 407px;
+    right: 0px;
 }
 
-/* 安眠藥 */
+/* 醫療證明 */
 .clue3{
     z-index: 3;
     background-color: transparent;
-    border: transparent;
+    border:transparent;
     position: absolute;
-    width: 106px;
-    height: 116px;
-    top: 747px;
-    left: 947px;
+    width: 213px;
+    height: 138px;
+    top: 610px;
+    left: 560px;
 }
 
-/* 絕育通知書 */
+/* 破碎合照 */
 .clue4{
     z-index: 3;
     background-color: transparent;
-    border: transparent;
+    border:transparent;
     position: absolute;
-    width: 279px;
-    height: 120px;
-    top: 770px;
-    left: 466px;
+    width: 180px;
+    height: 111px;
+    top: 465px;
+    left: 560px;
+}
+
+/* 門框 */
+.clue5{
+    z-index: 3;
+    background-color: transparent;
+    border:transparent;
+    position: absolute;
+    width: 38px;
+    height: 134px;
+    top: 252px;
+    left: 509px;
 }
 
 

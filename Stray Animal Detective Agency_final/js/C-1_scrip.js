@@ -8,6 +8,9 @@ const btn_cross2 = document.querySelector("#cross2");
 const btn_cross3 = document.querySelector("#cross3");
 const btn_cross4 = document.querySelector("#cross4");
 const btn_cross5 = document.querySelector("#cross5");
+const btn_nextpage1 = document.querySelector("#how-to-play1-btn");
+const btn_nextpage2 = document.querySelector("#how-to-play2-btn");
+const btn_nextpage3 = document.querySelector("#how-to-play3-btn");
 document.getElementById('variable').textContent = variable;
 document.getElementById('explain-page1').style.visibility = 'hidden';
 document.getElementById('explain-page2').style.visibility = 'hidden';
@@ -111,8 +114,21 @@ function checkAndModifyNewbiesVariable() {
       .split('=')[1];
   
     if (newbiesValue === '0') {
-      document.getElementById('explain-page5').style.visibility = 'visible';
+      document.getElementById('how-to-play1').style.visibility = 'visible';
       document.getElementById('all-darken').style.visibility = 'visible';
+      btn_nextpage1.addEventListener("click", function(){
+        document.getElementById('how-to-play1').style.visibility = 'hidden';
+        document.getElementById('how-to-play2').style.visibility = 'visible';
+      });
+      btn_nextpage2.addEventListener("click", function(){
+        document.getElementById('how-to-play2').style.visibility = 'hidden';
+        document.getElementById('how-to-play3').style.visibility = 'visible';
+      });
+      btn_nextpage3.addEventListener("click", function(){
+        document.getElementById('how-to-play3').style.visibility = 'hidden';
+        document.getElementById('all-darken').style.visibility = 'hidden';
+      });
+
       // 做不同的行為，例如修改 newbies 變數為 1
       document.cookie = 'newbies=1; expires=Thu, 01 Jan 2030 00:00:00 UTC; path=/';
       

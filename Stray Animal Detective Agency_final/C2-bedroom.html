@@ -17,12 +17,14 @@
     <!-- 正文 -->
     <img src="img/C/房間.jpg" alt="backround" class="backround">
     
-    <p class="game-introdution">點點看那些你覺得可疑的地方吧！c-2</p>
+    <p class="game-introdution">點點看那些你覺得可疑的地方吧！</p>
 
     <div class="clue-count">
         <img src="img/C/ivestigation.png" alt="ivestigation" class="ivestigation">
-        <p class="ivestigation-num"><span id="variable"></span>/4</p>
+        <p class="ivestigation-num"><span id="variable"></span>/5</p>
     </div>
+
+    <button class="question"><img src="img/C/question.png" alt="question" ></button>
 
     <div class="head-darken">
         <p class="head-darken"> </p>
@@ -36,23 +38,27 @@
         <button class="clue5" id="clue9"></button>
     </div>
 
-    <div id="to-d">
+    <button id="to-d" >
         <a href="B.html" class="to-d">恭喜！你已找到所有線索</a>
+    </button>
+
+    <div class="all-darken" id="all-darken">
+        <p class="all-darken"> </p>
     </div>
 
     <!-- 線索介紹頁面 -->
     
-    <div class="how-to-play1" id="how-to-play1">
+    <div class="how-to-play1" id="how-to-play4">
         <p class="how-to-play-description">目標 ： 找到所有的線索</p>
         <img src="img/C/howtoplay1.png" alt="content" class="content1-img">
         <button class="next-page1" id="how-to-play1-btn">下一頁</button>
     </div>
-    <div class="how-to-play2" id="how-to-play2">
+    <div class="how-to-play2" id="how-to-play5">
         <p class="how-to-play-description">方法 ： 點點你覺得可疑的地方</p>
         <img src="img/C/howtoplay2.png" alt="content" class="content2-img">
         <button class="next-page2" id="how-to-play2-btn">下一頁</button>
     </div>
-    <div class="how-to-play3" id="how-to-play3">
+    <div class="how-to-play3" id="how-to-play6">
         <p class="how-to-play-description">還不知道怎麼玩？</p>
         <img src="img/C/howtoplay3.png" alt="content" class="content3-img">
         <button class="start-game" id="how-to-play3-btn">開始調查吧！</button>
@@ -90,41 +96,35 @@
         <button class="cross" id="cross7"><img src="img/C/close_ring.png" alt="cross"></button>
         <img src="img/C/房間-醫療證明.bmp" alt="" class="explain-page-img">
         <div class="text">
-            <p class="title">發現: 安眠藥</p>
+            <p class="title">發現: 醫療證明</p>
             <p class="explain">
-                藥罐上面寫著”施力普-安眠藥”。<br><br>
-                狗碗裡剩餘的飼料中，<br>
-                竟發現有安眠藥殘留...<br><br>
-                難道狗狗一直服用安眠藥 ?!<br>
-                情況變得無法理解。
+                紙上寫著:<br>- 患者：麻里<br>
+                患部：右腳小腿<br>- 原因：寵物咬傷<br><br>
+                旁邊的照片是麻里被咬傷的小腿<br>情況慘重...
+            </p>
+        </div>
+    </div>
+
+    <div class="explain-page" id="explain-page8">
+        <button class="cross" id="cross8"><img src="img/C/close_ring.png" alt="cross"></button>
+        <img src="img/C/房間-相框.bmp" alt="" class="explain-page-img">
+        <div class="text">
+            <p class="title">發現: 破碎的合照</p>
+            <p class="explain">
+                地上的相框玻璃碎裂<br>放著兩張皺皺的相片<br><br>
+                那是已經被撕成兩半的合照...<br>一邊是麻里，一邊是她的愛犬
             </p>
         </div>
     </div>
 
     <div class="explain-page" id="explain-page9">
         <button class="cross" id="cross9"><img src="img/C/close_ring.png" alt="cross"></button>
-        <img src="img/C/C-1/調查信件.png" alt="" class="explain-page-img">
+        <img src="img/C/房間-破損門框.bmp" alt="" class="explain-page-img">
         <div class="text">
             <p class="title">發現: 絕育通知書</p>
             <p class="explain">
-                桌上攤著來自動保處的信件，<br>
-                寫著關於絕育的條款。<br><br>
-                根據動物保護法第27條，<br>
-                未替寵物絕育...
-            </p>
-        </div>
-    </div>
-
-    <div class="explain-page" id="explain-page9">
-        <button class="cross" id="cross9"><img src="img/C/close_ring.png" alt="cross"></button>
-        <img src="img/C/C-1/調查信件.png" alt="" class="explain-page-img">
-        <div class="text">
-            <p class="title">發現: 絕育通知書</p>
-            <p class="explain">
-                桌上攤著來自動保處的信件，<br>
-                寫著關於絕育的條款。<br><br>
-                根據動物保護法第27條，<br>
-                未替寵物絕育...
+                家中大門的木製門框被破壞<br>牆壁上出現爪痕<br><br>
+                推測是狗狗想要逃家<br>使出全力摧毀...
             </p>
         </div>
     </div>
