@@ -79,12 +79,13 @@
     cursor:pointer;
 }
 .here-btn-about:hover{
-    border-radius: 15px;
+    /* border-radius: 15px;
     border: 3px solid #2D1B0F;
     background: #FFD749;
     color: #2D1B0F;
     filter: drop-shadow(14px 12px 10px rgba(0, 0, 0, 0.20));
-    transition:all .1s;
+    transition:all .1s; */
+    background: #ffc93f;
 }
 /*幫助浪浪按鈕*/
 .btn-help{
@@ -143,12 +144,13 @@
     cursor:pointer;
 }
 .here-btn-help:hover{
-    border-radius: 15px;
+    /* border-radius: 15px;
     border: 3px solid #2D1B0F;
     background: #FFD749;
     color: #2D1B0F;
     filter: drop-shadow(14px 14px 10px rgba(0, 0, 0, 0.20));
-    transition:all .1s;
+    transition:all .1s; */
+    background: #ffc93f;
 }
 
 .main-pic{
@@ -355,7 +357,7 @@ footer{
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-    border-radius: 5px;
+    border-radius: 8px;
     border: 2px solid #2D1B0F;
     background: #FFD749;
     filter: drop-shadow(10px 8px 10px rgba(0, 0, 0, 0.20));
