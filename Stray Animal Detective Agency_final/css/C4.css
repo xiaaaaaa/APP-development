@@ -69,66 +69,56 @@ body{
     z-index: 3;
 }
 
-/* 醫療箱 */
+/* 牽繩 */
 .clue1{
     z-index: 3;
     background-color: transparent;
     /* border: #000000 solid 2px; */
     border: transparent;
     position: absolute;
-    width: 266px;
-    height: 240px;
-    top: 440px;
-    left: 91px;
+    width: 244px;
+    height: 113px;
+    top: 601px;
+    left: 438px;
 }
 
-/* 狗籠 */
+/* 幼犬 */
 .clue2{
     z-index: 3;
     background-color: transparent;
     border:transparent;
     position: absolute;
-    width: 286px;
-    height: 561px;
-    top: 407px;
-    right: 0px;
+    width: 167px;
+    height: 172px;
+    top: 707px;
+    right: 127px;
 }
 
-/* 醫療證明 */
+/* 箱子 */
 .clue3{
     z-index: 3;
     background-color: transparent;
     border:transparent;
     position: absolute;
-    width: 213px;
-    height: 138px;
-    top: 610px;
-    left: 560px;
+    width: 120px;
+    height: 90px;
+    top: 670px;
+    left: 160px;
 }
 
-/* 破碎合照 */
+/* 人影 */
 .clue4{
     z-index: 3;
     background-color: transparent;
     border:transparent;
     position: absolute;
-    width: 180px;
-    height: 111px;
-    top: 465px;
-    left: 560px;
+    width: 130px;
+    height: 166px;
+    top: 242px;
+    left: 26px;
 }
 
-/* 門框 */
-.clue5{
-    z-index: 3;
-    background-color: transparent;
-    border:transparent;
-    position: absolute;
-    width: 38px;
-    height: 134px;
-    top: 252px;
-    left: 509px;
-}
+
 
 
 /* explain-page */
