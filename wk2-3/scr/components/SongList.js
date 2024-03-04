@@ -1,22 +1,23 @@
 import React from "react";
 import{StyleSheet, Text, View, Image} from "react-native";
+import SongListData from "../json/SongList.json";
 
 const SongList = () => {
     return(
-        <View>
+      <View>
         <View style={styles.card}>
           <Image
             style={styles.songImage}
-            source={require('wk2-3\img\戸締まり.jpeg')} 
+            source={require('../img/戸締まり.jpeg')} 
           />
           <View style={styles.songName}>
             <Image
               style={styles.singerImage}
-              source={require('.../img/singer.jpg')} 
+              source={require('../img/singer.jpg')} 
             />
             <View style={styles.singerText}>
-              <Text style={styles.song}>戸締まり [Audio]</Text>
-              <Text style={styles.singer}>RADWIMPS</Text>
+              <Text style={styles.song}>{SongListData[0].title}</Text>
+              <Text style={styles.singer}>{SongListData[0].singer}</Text>
             </View>
           </View>
         </View>
@@ -24,16 +25,16 @@ const SongList = () => {
         <View style={styles.card}>
           <Image
             style={styles.songImage}
-            source={require('.../img/suzume.jpg')} 
+            source={require('../img/suzume.jpg')} 
           />
           <View style={styles.songName}>
             <Image
               style={styles.singerImage}
-              source={require('.../img/singer.jpg')} 
+              source={require('../img/singer.jpg')} 
             />
             <View style={styles.singerText}>
-              <Text style={styles.song}>すずめ feat.十明 [Official Lyric Video]</Text>
-              <Text style={styles.singer}>RADWIMPS</Text>
+              <Text style={styles.song}>{SongListData[1].title}</Text>
+              <Text style={styles.singer}>{SongListData[1].singer}</Text>
             </View>
           </View>
         </View>
@@ -41,16 +42,16 @@ const SongList = () => {
         <View style={styles.card}>
           <Image
             style={styles.songImage}
-            source={require('.../img/すずめの涙.jpg')} 
+            source={require('../img/すずめの涙.jpg')} 
           />
           <View style={styles.songName}>
             <Image
               style={styles.singerImage}
-              source={require('.../img/singer.jpg')} 
+              source={require('../img/singer.jpg')} 
             />
             <View style={styles.singerText}>
-              <Text style={styles.song}>すずめの涙 [Audio]</Text>
-              <Text style={styles.singer}>RADWIMPS</Text>
+              <Text style={styles.song}>{SongListData[2].title}</Text>
+              <Text style={styles.singer}>{SongListData[2].singer}</Text>
             </View>
           </View>
         </View>
@@ -58,16 +59,16 @@ const SongList = () => {
         <View style={styles.card}>
           <Image
             style={styles.songImage}
-            source={require('.../img/tamaki.png')} 
+            source={require('../img/tamaki.png')} 
           />
           <View style={styles.songName}>
             <Image
               style={styles.singerImage}
-              source={require('.../img/singer.jpg')} 
+              source={require('../img/singer.jpg')} 
             />
             <View style={styles.singerText}>
-              <Text style={styles.song}>Tamaki [Audio]</Text>
-              <Text style={styles.singer}>RADWIMPS</Text>
+              <Text style={styles.song}>{SongListData[3].title}</Text>
+              <Text style={styles.singer}>{SongListData[3].singer}</Text>
             </View>
           </View>
         </View>
@@ -75,16 +76,16 @@ const SongList = () => {
         <View style={styles.card}>
           <Image
             style={styles.songImage}
-            source={require('.../img/カナタハルカ.jpg')} 
+            source={require('../img/カナタハルカ.jpg')} 
           />
           <View style={styles.songName}>
             <Image
               style={styles.singerImage}
-              source={require('.../img/singer.jpg')} 
+              source={require('../img/singer.jpg')} 
             />
             <View style={styles.singerText}>
-              <Text style={styles.song}>カナタハルカ [Official Lyric Video]</Text>
-              <Text style={styles.singer}>RADWIMPS</Text>
+              <Text style={styles.song}>{SongListData[4].title}</Text>
+              <Text style={styles.singer}>{SongListData[4].singer}</Text>
             </View>
           </View>
         </View>

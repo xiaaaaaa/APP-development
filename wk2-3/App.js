@@ -10,10 +10,8 @@ export default function App() {
       <StatusBar /> 
       <Header  />
       <SongList />
-
       </SafeAreaView>
     </ScrollView>
-    
   );
 }
 
