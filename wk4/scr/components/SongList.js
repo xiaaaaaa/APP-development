@@ -45,6 +45,7 @@ const SongList = () => {
       contentContainerStyle={{paddingHorizontal: 10}}
       stickySectionHeadersEnabled = {flase}
       showsHorizontalScrollIndicator={flase}
+      //renderSectionHeader={renderSectionHeader}
       renderItem={renderItem}
       keyExtractor={item => item.title}
     />
