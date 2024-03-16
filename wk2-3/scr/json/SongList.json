@@ -1,23 +1,38 @@
 [
     {
         "title":"戸締まり [Audio]",
-        "singer":"RADWIMPS"        
+        "singer":"RADWIMPS",
+        "url": "https://www.youtube.com/watch?v=7_2aku0rtNQ",
+        "image": "https://cdn-ak.f.st-hatena.com/images/fotolife/c/cardtrade1/20221114/20221114184107.jpg",
+        "thumbnail_image": "https://raw.githubusercontent.com/xiaaaaaa/APP-development/main/img/singer.jpg"      
     },
     {
         "title":"すずめ feat.十明 [Official Lyric Video]",
-        "singer":"RADWIMPS"        
+        "singer":"RADWIMPS",
+        "url": "https://www.youtube.com/watch?v=Xs0Lxif1u9E",
+        "image": "https://raw.githubusercontent.com/xiaaaaaa/APP-development/main/img/suzume.jpg",
+        "thumbnail_image": "https://raw.githubusercontent.com/xiaaaaaa/APP-development/main/img/singer.jpg"              
     },
     {
         "title":"すずめの涙 [Audio]",
-        "singer":"RADWIMPS"        
+        "singer":"RADWIMPS",
+        "url": "https://www.youtube.com/watch?v=FxK6QRNsc3Q",
+        "image": "https://raw.githubusercontent.com/xiaaaaaa/APP-development/main/img/%E3%81%99%E3%81%9A%E3%82%81%E3%81%AE%E6%B6%99.jpg",
+        "thumbnail_image": "https://raw.githubusercontent.com/xiaaaaaa/APP-development/main/img/singer.jpg"           
     },
     {
         "title":"Tamaki [Audio]",
-        "singer":"RADWIMPS"        
+        "singer":"RADWIMPS",
+        "url": "https://www.youtube.com/watch?v=4rC6_P-YQ9E",
+        "image": "https://raw.githubusercontent.com/xiaaaaaa/APP-development/main/img/tamaki.png",
+        "thumbnail_image": "https://raw.githubusercontent.com/xiaaaaaa/APP-development/main/img/singer.jpg"           
     },
     {
         "title":"カナタハルカ [Official Lyric Video]",
-        "singer":"RADWIMPS"        
+        "singer":"RADWIMPS",
+        "url": "https://www.youtube.com/watch?v=TDi-hGRYX6g",
+        "image": "https://github.com/xiaaaaaa/APP-development/blob/main/img/suzume.jpg",
+        "thumbnail_image": "https://raw.githubusercontent.com/xiaaaaaa/APP-development/main/img/singer.jpg"           
     }
 ]
     

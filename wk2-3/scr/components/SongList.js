@@ -8,12 +8,16 @@ const SongList = () => {
         <View style={styles.card}>
           <Image
             style={styles.songImage}
-            source={require('../img/戸締まり.jpeg')} 
+            source={{
+              uri: SongListData[0].image
+            }} 
           />
           <View style={styles.songName}>
             <Image
               style={styles.singerImage}
-              source={require('../img/singer.jpg')} 
+              source={{
+                uri: SongListData[0].thumbnail_image
+              }} 
             />
             <View style={styles.singerText}>
               <Text style={styles.song}>{SongListData[0].title}</Text>
@@ -25,12 +29,16 @@ const SongList = () => {
         <View style={styles.card}>
           <Image
             style={styles.songImage}
-            source={require('../img/suzume.jpg')} 
+            source={{
+              uri: SongListData[1].image
+            }}  
           />
           <View style={styles.songName}>
             <Image
               style={styles.singerImage}
-              source={require('../img/singer.jpg')} 
+              source={{
+                uri: SongListData[1].thumbnail_image
+              }} 
             />
             <View style={styles.singerText}>
               <Text style={styles.song}>{SongListData[1].title}</Text>
@@ -42,12 +50,16 @@ const SongList = () => {
         <View style={styles.card}>
           <Image
             style={styles.songImage}
-            source={require('../img/すずめの涙.jpg')} 
+            source={{
+              uri: SongListData[2].image
+            }} 
           />
           <View style={styles.songName}>
             <Image
               style={styles.singerImage}
-              source={require('../img/singer.jpg')} 
+              source={{
+                uri: SongListData[2].thumbnail_image
+              }} 
             />
             <View style={styles.singerText}>
               <Text style={styles.song}>{SongListData[2].title}</Text>
@@ -59,12 +71,16 @@ const SongList = () => {
         <View style={styles.card}>
           <Image
             style={styles.songImage}
-            source={require('../img/tamaki.png')} 
+            source={{
+              uri: SongListData[3].image
+            }} 
           />
           <View style={styles.songName}>
             <Image
               style={styles.singerImage}
-              source={require('../img/singer.jpg')} 
+              source={{
+                uri: SongListData[3].thumbnail_image
+              }} 
             />
             <View style={styles.singerText}>
               <Text style={styles.song}>{SongListData[3].title}</Text>
@@ -76,12 +92,16 @@ const SongList = () => {
         <View style={styles.card}>
           <Image
             style={styles.songImage}
-            source={require('../img/カナタハルカ.jpg')} 
+            source={{
+              uri: SongListData[4].image
+            }} 
           />
           <View style={styles.songName}>
             <Image
               style={styles.singerImage}
-              source={require('../img/singer.jpg')} 
+              source={{
+                uri: SongListData[4].thumbnail_image
+              }} 
             />
             <View style={styles.singerText}>
               <Text style={styles.song}>{SongListData[4].title}</Text>
