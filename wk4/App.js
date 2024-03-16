@@ -10,7 +10,7 @@ export default function App() {
       <SafeAreaView style={{flex: 1, backgroundColor:'#fff'}}>
       <StatusBar /> 
       <Header title={SongListData.songListTitle} />
-      <SongList />
+      <SongList list={SongListData.songList} />
       </SafeAreaView>
     </ScrollView>
   );
