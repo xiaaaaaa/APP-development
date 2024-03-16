@@ -1,24 +1,28 @@
 import React from "react";
-import { StyleSheet, View, Text, Image} from "react-native";
+import { StyleSheet, View, Text, Image, Pressable, Linking} from "react-native";
 
 const SongListDetail = props => {
     //const {thumbnail_image, title, singer, image} = props.songList;
     let {songList} = props;
     return(
         <View style={styles.card}>
-            <Image
-                style={styles.songImage}
-                source={{
-                    uri: songList.image
-                }} 
-            />
+            <Pressable onPress={()=>Linking.openURL(songList.url)}>
+              <Image
+                  style={styles.songImage}
+                  source={{
+                      uri: songList.image
+                  }} 
+              />
+            </Pressable>
+            
             <View style={styles.songName}>
+                
                 <Image
-                    style={styles.singerImage}
-                    source={{
-                        uri: songList.thumbnail_image
-                    }} 
-                />
+                      style={styles.singerImage}
+                      source={{
+                          uri: songList.thumbnail_image
+                      }} 
+                  />
                 <View style={styles.singerText}>
                     <Text style={styles.song}>{songList.title}</Text>
                     <Text style={styles.singer}>{songList.singer}</Text>
