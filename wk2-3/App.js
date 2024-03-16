@@ -4,14 +4,12 @@ import SongList from './scr/components/SongList';
 
 
 export default function App() {
-  return (
-    <ScrollView>
-      <SafeAreaView style={{flex: 1, backgroundColor:'#fff'}}>
-      <StatusBar /> 
-      <Header  />
-      <SongList />
-      </SafeAreaView>
-    </ScrollView>
+  return (    
+    <SafeAreaView style={{flex: 1, backgroundColor:'#fff'}}>
+    <StatusBar /> 
+    <Header  />
+    <SongList />
+    </SafeAreaView>
   );
 }
 
