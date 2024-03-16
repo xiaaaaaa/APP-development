@@ -1,31 +1,32 @@
 import React from "react";
 import { StyleSheet, View, Text, Image} from "react-native";
 
-const SongListDetail = (props) => {
-    const {thumbnail_image, title, singer, image} = props.songList;
+const SongListDetail = props => {
+    //const {thumbnail_image, title, singer, image} = props.songList;
+    let {songList} = props;
     return(
         <View style={styles.card}>
             <Image
                 style={styles.songImage}
                 source={{
-                    uri: image
+                    uri: songList.image
                 }} 
             />
             <View style={styles.songName}>
                 <Image
                     style={styles.singerImage}
                     source={{
-                        uri: thumbnail_image
+                        uri: songList.thumbnail_image
                     }} 
                 />
                 <View style={styles.singerText}>
-                    <Text style={styles.song}>{title}</Text>
-                    <Text style={styles.singer}>{singer}</Text>
+                    <Text style={styles.song}>{songList.title}</Text>
+                    <Text style={styles.singer}>{songList.singer}</Text>
                 </View>
             </View>
         </View>
-    );
-}
+    )
+};
 
 const styles = StyleSheet.create({
     card:{
