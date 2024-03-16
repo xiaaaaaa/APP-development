@@ -1,23 +1,25 @@
-[
-    {
-        "title":"戸締まり [Audio]",
-        "singer":"RADWIMPS"        
-    },
-    {
-        "title":"すずめ feat.十明 [Official Lyric Video]",
-        "singer":"RADWIMPS"        
-    },
-    {
-        "title":"すずめの涙 [Audio]",
-        "singer":"RADWIMPS"        
-    },
-    {
-        "title":"Tamaki [Audio]",
-        "singer":"RADWIMPS"        
-    },
-    {
-        "title":"カナタハルカ [Official Lyric Video]",
-        "singer":"RADWIMPS"        
-    }
-]
-    
+{
+    "songListTitle": "【 Suzume 】-  RADWIMPS",
+    "songList": [
+        {
+            "title": "戸締まり [Audio]",
+            "singer": "RADWIMPS"
+        },
+        {
+            "title": "すずめ feat.十明 [Official Lyric Video]",
+            "singer": "RADWIMPS"
+        },
+        {
+            "title": "すずめの涙 [Audio]",
+            "singer": "RADWIMPS"
+        },
+        {
+            "title": "Tamaki [Audio]",
+            "singer": "RADWIMPS"
+        },
+        {
+            "title": "カナタハルカ [Official Lyric Video]",
+            "singer": "RADWIMPS"
+        }
+    ]
+}

@@ -16,8 +16,8 @@ const SongList = () => {
               source={require('../img/singer.jpg')} 
             />
             <View style={styles.singerText}>
-              <Text style={styles.song}>{SongListData[0].title}</Text>
-              <Text style={styles.singer}>{SongListData[0].singer}</Text>
+              <Text style={styles.song}>{SongListData.songList[0].title}</Text>
+              <Text style={styles.singer}>{SongListData.songList[0].singer}</Text>
             </View>
           </View>
         </View>
@@ -33,8 +33,8 @@ const SongList = () => {
               source={require('../img/singer.jpg')} 
             />
             <View style={styles.singerText}>
-              <Text style={styles.song}>{SongListData[1].title}</Text>
-              <Text style={styles.singer}>{SongListData[1].singer}</Text>
+              <Text style={styles.song}>{SongListData.songList[1].title}</Text>
+              <Text style={styles.singer}>{SongListData.songList[1].singer}</Text>
             </View>
           </View>
         </View>
@@ -50,8 +50,8 @@ const SongList = () => {
               source={require('../img/singer.jpg')} 
             />
             <View style={styles.singerText}>
-              <Text style={styles.song}>{SongListData[2].title}</Text>
-              <Text style={styles.singer}>{SongListData[2].singer}</Text>
+              <Text style={styles.song}>{SongListData.songList[2].title}</Text>
+              <Text style={styles.singer}>{SongListData.songList[2].singer}</Text>
             </View>
           </View>
         </View>
@@ -67,8 +67,8 @@ const SongList = () => {
               source={require('../img/singer.jpg')} 
             />
             <View style={styles.singerText}>
-              <Text style={styles.song}>{SongListData[3].title}</Text>
-              <Text style={styles.singer}>{SongListData[3].singer}</Text>
+              <Text style={styles.song}>{SongListData.songList[3].title}</Text>
+              <Text style={styles.singer}>{SongListData.songList[3].singer}</Text>
             </View>
           </View>
         </View>
@@ -84,8 +84,8 @@ const SongList = () => {
               source={require('../img/singer.jpg')} 
             />
             <View style={styles.singerText}>
-              <Text style={styles.song}>{SongListData[4].title}</Text>
-              <Text style={styles.singer}>{SongListData[4].singer}</Text>
+              <Text style={styles.song}>{SongListData.songList[4].title}</Text>
+              <Text style={styles.singer}>{SongListData.songList[4].singer}</Text>
             </View>
           </View>
         </View>
