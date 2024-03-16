@@ -8,9 +8,9 @@ export default function App() {
   return (
     <ScrollView>
       <SafeAreaView style={{flex: 1, backgroundColor:'#fff'}}>
-      <StatusBar /> 
-      <Header title={SongListData.songListTitle} />
-      <SongList list={SongListData.songList} />
+        <StatusBar /> 
+        <Header />
+        <SongList />
       </SafeAreaView>
     </ScrollView>
   );
