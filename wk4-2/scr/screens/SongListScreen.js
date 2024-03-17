@@ -14,3 +14,5 @@ const SongListScreen =({navigator}) => {
     />
     </View>
 }
+
+export default SongListScreen;
