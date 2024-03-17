@@ -6,25 +6,25 @@ import HotSongList from "./HotSongList";
 
 const SongList = () => {
 
-  const renderSectionHeader = ({ section }) => (
+  const renderSectionHeader = ({ section}) => (
     <>
       <Text style={styles.sectionHeader}>{section.title}</Text>
       {section.horizontal ? (
         <FlatList
           horizontal={true}
           data={section.data}
-          renderItem={({ item }) => <HotSongList songList={item} />}
+          renderItem={({ item }) => <HotSongList songList={item}/>}
           showsHorizontalScrollIndicator={false}
           keyExtractor={ item => item.title }
         />
       ) : null}
     </>
   );
-  const renderItem = ({ item, section }) => {
+  const renderItem = ({ item, section , navigation}) => {
     if (section.horizontal) {
       return null;
     }
-    return <SongListDetail songList={item} />
+    return <SongListDetail songList={item} navigation={navigation}/>
   };
 
   return (

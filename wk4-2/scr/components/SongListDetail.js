@@ -1,12 +1,14 @@
 import React from "react";
 import { StyleSheet, View, Text, Image, Pressable, Linking} from "react-native";
+import { useNavigation } from '@react-navigation/native';
 
 const SongListDetail = props => {
     //const {thumbnail_image, title, singer, image} = props.songList;
     let {songList} = props;
+    const navigation = useNavigation();
     return(
         <View style={styles.card}>
-            <Pressable onPress={()=>Linking.openURL(songList.url)}>
+            <Pressable onPress={() => navigation.navigate('Detail', songList)}>
               <Image
                   style={styles.songImage}
                   source={{
@@ -14,6 +16,13 @@ const SongListDetail = props => {
                   }} 
               />
             </Pressable>
+
+            {/* <Image
+                style={styles.songImage}
+                source={{
+                    uri: songList.image
+                }} 
+            /> */}
             
             <View style={styles.songName}>
                 
