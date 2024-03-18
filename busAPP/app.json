@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "busAPP",
-    "slug": "busAPP",
+    "name": "wk4proj",
+    "slug": "wk4proj",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/location.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -25,6 +25,14 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow"
+        }
+      ]
+    ]
   }
 }
