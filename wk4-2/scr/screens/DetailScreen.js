@@ -46,12 +46,13 @@ const DetailScreen = ({route}) => {
 
 const style = StyleSheet.create({
     image:{
-        height: 350,
+        height: 300,
         width: null
     },
     linkCard:{
         backgroundColor: '#fff',
         padding: 30,
+        paddingBottom: 40,
         marginHorizontal: 10,
         marginTop: 10
     },
@@ -59,7 +60,7 @@ const style = StyleSheet.create({
         fontWeight: 'bold',
         textAlign: 'center',
         fontSize: 33,
-        marginVertical: 10,
+        
     },
     singerName:{
         textAlign: 'center',
