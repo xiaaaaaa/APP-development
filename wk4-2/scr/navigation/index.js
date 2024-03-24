@@ -1,5 +1,5 @@
 import React from "react";
-import { NavigationContainer } from "@react-navigation/native";
+import { NavigationContainer, useTheme } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
@@ -8,15 +8,17 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import SongListScreen from "../screens/SongListScreen";
 import DetailScreen from "../screens/DetailScreen";
 import SettingsScreen from "../screens/SettingsScreen";
+import MyTheme from "../Theme";
 
 import songListData from "../json/SongList.json"
+import { Colors } from "react-native/Libraries/NewAppScreen";
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
 const Navigation = () => {
     return(
-        <NavigationContainer>
+        <NavigationContainer theme={MyTheme}>
             <MyTab />
         </NavigationContainer>
     );
@@ -24,11 +26,14 @@ const Navigation = () => {
 
 
 const MyTab = () => {
+    const {colors} = useTheme();
+
     return(
         <Tab.Navigator
             initialRouteName="HomeStack"
             screenOptions={{
-                tabBarActiveTintColor:'#379bde'
+                tabBarInactiveTintColor: colors.primary700,
+                tabBarActiveTintColor: colors.light400,
             }}
         >
             <Tab.Screen 
