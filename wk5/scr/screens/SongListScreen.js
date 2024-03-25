@@ -11,7 +11,7 @@ const SongListScreen =({navigation}) => {
             <Header  /> */}
             <SongList 
                 list = {SongListData.songList}
-                navigation={navigation}
+                // navigation={navigation}
             />
         </View>
 
