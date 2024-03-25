@@ -1,13 +1,19 @@
 import React from "react";
 import {View, Text, StyleSheet} from 'react-native';
-import SettingList from "../components/SettingList";
+import {Box} from 'native-base';
+import ListItem from "../components/ListItem";
 
 const SettingsScreen = ({navigation}) => {
     return(
-    <View style={style.setting}>
-        <SettingList title='Display' navigation={navigation} destination="DisplaySetting" />
-        <SettingList title='Account' navigation={navigation} />
-    </View>
+
+        // <Box mt="1" borderBottomWidth={1} borderColor="lightgray">
+        //     <ListItem title='Display' navigation={navigation} destination="DisplaySetting" />
+        //     <ListItem title='Account' navigation={navigation} />
+        // </Box>
+        <View style={style.setting}>
+            <ListItem title='Display' navigation={navigation} destination="DisplaySetting" />
+            <ListItem title='Account' navigation={navigation} />
+        </View>
     );
 }
 
@@ -15,6 +21,7 @@ const SettingsScreen = ({navigation}) => {
 const style = StyleSheet.create({
     setting:{
         flex:1,
+        backgroundColor:'#fff',
         borderBottomWidth:1, 
         borderColor: '#cbced1',
     },

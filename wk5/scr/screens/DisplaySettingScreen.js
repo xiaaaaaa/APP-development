@@ -6,7 +6,7 @@ const DisplaySettingScreen = () => {
     return(
         <Center style={style.card}>
             <HStack style={style.content}>
-                <Text>Light Mode</Text>
+                <Text style={style.text}>Light Mode</Text>
                 <Switch 
                     name = "light Mode"
                     accessibilityLabel = "display-mode"
@@ -19,6 +19,10 @@ const DisplaySettingScreen = () => {
 
 const style = StyleSheet.create({
     card:{
+        backgroundColor:'#fff',
+        width:'90%',
+        marginTop:20,
+        alignSelf:'center',
         borderWidth:1,
         borderRadius:9,
         borderColor:'#fff',
@@ -29,6 +33,10 @@ const style = StyleSheet.create({
     content:{
         margin:10,
         alignItems:'center',
+    },
+    text:{
+        fontSize:18,
+        marginRight:10,
     },
 });
 

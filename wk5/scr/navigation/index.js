@@ -1,13 +1,17 @@
 import React from "react";
 import { NavigationContainer, useTheme } from "@react-navigation/native";
+// import { useTheme } from 'native-base';
+import { NativeBaseProvider } from 'native-base';
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+//import { createDrawerNavigator } from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import SongListScreen from "../screens/SongListScreen";
 import DetailScreen from "../screens/DetailScreen";
 import SettingsScreen from "../screens/SettingsScreen";
+import DisplaySettingScreen from "../screens/DisplaySettingScreen";
 import MyTheme from "../Theme";
 
 import songListData from "../json/SongList.json"
@@ -18,15 +22,18 @@ const Tab = createBottomTabNavigator();
 
 const Navigation = () => {
     return(
-        <NavigationContainer theme={MyTheme}>
-            <MyTab />
-        </NavigationContainer>
+        <NativeBaseProvider>
+            <NavigationContainer theme={MyTheme}>
+                <MyTabs />
+            </NavigationContainer>
+        </NativeBaseProvider>
+        
     );
 }
 
 
-const MyTab = () => {
-    const {colors} = useTheme();
+const MyTabs = () => {
+    const { colors } = useTheme();
 
     return(
         <Tab.Navigator
@@ -48,9 +55,10 @@ const MyTab = () => {
                 }}
             />
             <Tab.Screen 
-                name="Setting"
-                component={SettingsScreen}
+                name="SettingsStack"
+                component={SettingsStack}
                 options={{
+                    headerShown: false,
                     title: 'Settings',
                     headerTitleStyle:{
                         fontSize:20,
@@ -62,6 +70,36 @@ const MyTab = () => {
                 }}
             />
         </Tab.Navigator>
+    );
+}
+
+const SettingsStack = () => {
+    return(
+        <Stack.Navigator>
+            <Stack.Screen 
+                name="Setting"
+                component={SettingsScreen}
+                options={{
+                    title:'Settings', 
+                    headerTitleStyle:{
+                        fontWeight:'400',
+                        fontSize:20,
+                    },
+                }}
+            />
+            <Stack.Screen 
+                name="DisplaySetting"
+                component={DisplaySettingScreen}
+                options={{
+                    //headerShown: false,
+                    title: "Display",
+                    headerTitleStyle:{
+                        fontWeight:'400',
+                        fontSize:20,
+                    },
+                }}
+            />
+        </Stack.Navigator>
     );
 }
 
