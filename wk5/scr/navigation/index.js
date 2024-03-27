@@ -30,12 +30,12 @@ const Drawer = createDrawerNavigator();
 
 const Navigation = () => {
     return(
-        // <NativeBaseProvider>
-            
-        // </NativeBaseProvider>
-        <NavigationContainer theme={MyTheme}>
-            <MyDrawer />
-        </NavigationContainer>
+        <NativeBaseProvider>
+            <NavigationContainer theme={MyTheme}>
+                <MyDrawer />
+            </NavigationContainer>
+         </NativeBaseProvider>
+        
     );
 }
 
@@ -97,7 +97,7 @@ const MyDrawer = () => {
         >
         <Drawer.Screen 
             name="HomeStack"
-            component={HomeStack}
+            component={MyTabs}
             options={{
                 headerShown: false,
                 drawerLabel: "Main Page",
