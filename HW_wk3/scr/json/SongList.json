@@ -1,0 +1,69 @@
+[
+    {
+        "title":"Popular Books",
+        "horizontal": true,
+        "star": false,
+        "data":[
+            {
+                "title":"Fashionopolis",
+                "singer":"Dana Thomas",
+                "url": "https://www.youtube.com/watch?v=7_2aku0rtNQ",
+                "image": "https://s3-alpha-sig.figma.com/img/8098/894d/9cc9f0e42326b7024eeac18ad09f3c8e?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZUN3wNr8H~4yDQ64YMds2OW57--aVl97bGFGOtHnG-7NLZ-Kr3wm97MUNvNiieefUultJg~N86W720ZpVifWg8gPMXHdclXYE5FEedIT~m-sFzB~hB-ukLoZoAViI2oWtzkKF2CFRCX2VF319p9WXJ~LW3YRCJUN~eKbM~L4OBAzentd5cCrUNH8Q0VwfanFLcAIcg3oVRFLIn1nd77IPk3yPvJtYHod-nga7zY9Ie72XW59kjtdun-YG3HrChbTXQ9XM1bS1JX9nEuWRB3DaeitCmzdI8Z1z78UCf-HHLomTzxVVdDlKqIg4YPgWsDV0iKv-OJeiuA5-UnccLsVJQ__"
+                    
+            },
+            {
+                "title":"Chanel",
+                "singer":"Patrick Mauriès",
+                "url": "https://www.youtube.com/watch?v=Xs0Lxif1u9E",
+                "image": "https://s3-alpha-sig.figma.com/img/5f46/02e2/8ad53ad8b0bfa50c9d279b4a3505fdf1?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ei~iSV45l65sWX6OVyiCVcg0-8x1mE3-gEWRYFSblibypCKNCnIFDxGv2G1cwvpV22hPdB3yJs-iiXFTjDbcVFXX5yUe3HBCzlhND356qphdqWNn29Srg0YGI9fpRbKmzWRf~6gzz9Ljxgu3RRXfUoweYImekP0QGrWsa-CWkAjyZl49UshLIiCQHnTrxKRjjwCpREkARTgYrXIZ6~rw50N2YNQdQGOo4DoEyR2cIXZm3GhgLg6nNte4veo0iHi7QNwpDOy-m9j9p-eA2~-3EXYM6LKLry9MZ~RnSQ~DxD6WVKiUcoeoO-nIRVafk0CBu53tRFZS52Q9pQ2xmIqdWw__"
+                             
+            },
+            {
+                "title":"Calligraphy",
+                "singer":"June & Lucy",
+                "url": "https://www.youtube.com/watch?v=FxK6QRNsc3Q",
+                "image": "https://s3-alpha-sig.figma.com/img/fe9a/15a4/83200d80b67a4555c8b4a19b8073085e?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EkgW-SQT8YLzEKfe7Qjtv6hL9yxFvibs7q6FQe7eZsValNGVYoiM~qSkICUz6uWrmHUzQtkhZV5zOKCkFIy3sO1DU5707ea7mL06XW-4kYX41JVapsaw~GdFgfxx3cFb78yeLGB4kBpSsFAFbIFcMYb9itIDpt3KgYzKxlQ1kQUU9aR1uSA77HEOq~FnxHUrTQyk70I3xBNia27-OyOizq9HpHqjJBixcphF8ibhusrPfeveFu0KR8BNW~zNz2jX09zwMpgpFI4TaMtzPNaXFsiU6DpApiQiHmYc-tViN6h2Ce-8kd7N89bpEF1B0zT9WNb2tFFNyexaUdjok5ydyw__"
+                           
+            }
+            
+        ]  
+    },
+
+    {
+    "title":"Newest",
+    "horizontal": true,
+    "star": true,
+    "data":[
+        {
+            "title":"Yves Saint Laurent",
+            "singer":"Suzy Menkes ",
+            "url": "https://www.youtube.com/watch?v=7_2aku0rtNQ",
+            "image": "https://s3-alpha-sig.figma.com/img/e458/6c5d/7372d2e5458827acd2b41e8111f153e7?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=WYnESkVYKZ3lXNY64BHp1yBJVWqF~8OdU0KZP~O76gsgWO29xfzkceCLjZyD-YP~2FdMFevQw2Ya24ignf3~POXVlCiVN5IVeX~pwSLyu979G6LCzgjNZ8oSg6UPhXFBQu4RkPhb~xQQJAddn1xwIwPeVRoFR2S1O4ptTU3Z5B0xOkTXfDabQt1W4VCBWtLXPRuNXcdnQCDfaVJ~bg2xGpE0WwmXdQ0ZGIiADUySJDo9ZpfnDHR-nkUKTXYPNTO4XUQxsrMijLW4cR8uICjwTm9KCNMScAHD74qfjGqMThKDAYKnGU7G5UnAHIsW9cW6hUut5DMkRjzKJxnItxHeSA__",
+               
+            "date": "2023/2/9",
+            "description":"Vocal / Guitar / Piano    野田洋次郎 Yojiro Noda\nGuitar    桑原彰 Akira Kuwahara\nBass    武田祐介 Yusuke Takeda\nDrum    山口智史 Satoshi Yamaguchi"   
+        },
+        {
+            "title":"The Book of Signs",
+            "singer":"Rudolf Koch ",
+            "url": "https://www.youtube.com/watch?v=Xs0Lxif1u9E",
+            "image": "https://s3-alpha-sig.figma.com/img/a6b7/c8c7/3db01feb6161a1c16f579aa23c453740?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=puH5GCyI0pjm0hJGTQJidniEWzBdmpNvShjcQA79ErqV--5CRxBSYcrMpa9vl-8PP0gU4ORhTZiylMB9wEdcsv0-niJl2TNVCaiNXdsM0JdK2uL6QhPDnkshHUMT9XtJ3kTumE6nWPK7pl5OA-uhJC9WS0PCBXEbivns~8Rvpx4qCNq55fdJOK7fwcqDX~sbsCAIyOQa24H~9Ler8MflpYJQF1vQyF8tI3gckNXdVbetPKddNKjihqgG9atv541ikONbmAlKRlrubMSymTQZFfjHgLfJ3tCGdWCDHaXFALNsdPqj5wyZCH14LMveGHIYUQz6RPY0Tu6cGlaTdsj8KA__",
+            
+            "date": "2022/10/5",
+            "description":"Vocal / Guitar / Piano    野田洋次郎 Yojiro Noda\nGuitar    桑原彰 Akira Kuwahara\nBass    武田祐介 Yusuke Takeda\nDrum    山口智史 Satoshi Yamaguchi"              
+        },
+        {
+            "title":"Stitched Up",
+            "singer":"Tansy E. Hoskins",
+            "url": "https://www.youtube.com/watch?v=FxK6QRNsc3Q",
+            "image": "https://s3-alpha-sig.figma.com/img/185c/7484/56dfcaedefa45ba02fe6718c381bbf99?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fl2bJ3K1cQ1VYm25IEVLJLWfo2FL2SXNLES0gJeLx0eaDpHiwuRyQcHYQyYmwgtv1FS5DjIy2AwtpdlPqkDzFLLvsCSs5t~rQRJiWov~gOIjYRbYp7z5mlSLrKb5lWZx8l7XAvjlC1yZCD3TEQSQuObhkHAaSk3REP5zH9wjzU~eU30E9w6NKKQoOA0mHGNjaKgkNiMmvsmnYxq521FWaYRkD6sluJ9DXCWG5z04fRwAlqSbuGSm7OTH60dZBj-xa9fasHnryVO1kPCfKA30KHhm1FR~Synbf0G65fxvMe8LAqT8VZkMOf4SYwPbFsnHtR8ja-tfg0aSRNJxnIgAUA__",
+            
+            "date": "2023/2/9",
+            "description":"Vocal / Guitar / Piano    野田洋次郎 Yojiro Noda\nGuitar    桑原彰 Akira Kuwahara\nBass    武田祐介 Yusuke Takeda\nDrum    山口智史 Satoshi Yamaguchi"          
+        }
+    ]  
+    }
+    
+    
+]
+    
