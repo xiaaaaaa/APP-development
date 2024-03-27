@@ -45,11 +45,13 @@ const CustomDrawerContent = (props) => {
 
     return(
         <DrawerContentScrollView {...props}
-            contentContainerStyle = {{paddingTop:0}}
+            // contentContainerStyle = {{paddingTop:0}}
+            backgroundColor = {"#f7fcfc"}
         >
             <Image
                 h={200}
                 w="100%"
+                marginBottom={20}
                 source={require("../images/drawerTile.jpg")}
                 alt="albumImage"
             />
@@ -59,7 +61,7 @@ const CustomDrawerContent = (props) => {
                 activeBackgroundColor={colors.primary100}
                 activeTintColor={colors.light400}
                 inactiveTintColor={colors.primary700}
-                labelStyle={{fontSize:18, fontStyle:'400'}}
+                labelStyle={{fontSize:16}}
                 icon={({color})=>(
                     <MaterialCommunityIcons name="alert-circle-outline" color={color} size={26} />
                 )}
@@ -69,7 +71,7 @@ const CustomDrawerContent = (props) => {
                 activeBackgroundColor={colors.primary100}
                 activeTintColor={colors.light400}
                 inactiveTintColor={colors.primary700}
-                labelStyle={{fontSize:18, fontStyle:'400'}}
+                labelStyle={{fontSize:16}}
                 icon={({color})=>(
                     <MaterialCommunityIcons name="contacts-outline" color={color} size={26} />
                 )}
@@ -91,7 +93,7 @@ const MyDrawer = () => {
                 drawerInactiveTintColor: colors.primary700,
                 
                 drawerStyle:{width:300},
-                drawerLabelStyle:{ fontSize:18, fontWeight:'400'},
+                drawerLabelStyle:{ fontSize:16, fontWeight:'400'},
             }}
             drawerContent={ props => <CustomDrawerContent {...props}/> } 
         >
@@ -179,6 +181,7 @@ const SettingsStack = ({navigation}) => {
                           style={{ marginRight: 20 }}
                         />
                     ),
+                   
                 }}
             />
             <Stack.Screen 
@@ -202,10 +205,10 @@ const HomeStack = ({navigation}) => {
     return(
         <Stack.Navigator>
             <Stack.Screen 
-                name='Home'
+                name="Home"
                 component={SongListScreen}
-                option={{
-                    title: songListData.title,
+                options={{
+                    title: "Home",
                     headerTitleStyle: {
                         fontWeight:'400',
                         fontSize:20
@@ -219,6 +222,7 @@ const HomeStack = ({navigation}) => {
                         />
                     ),
                 }}
+                
             />
             <Stack.Screen 
                 name='Detail'
