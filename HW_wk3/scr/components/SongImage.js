@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, View, Text, Image, Pressable, Linking} from "react-native";
+import { StyleSheet, Image, Pressable } from "react-native";
 import { useNavigation } from '@react-navigation/native';
 
 const SongImage = ({detail, image, songList}) => {

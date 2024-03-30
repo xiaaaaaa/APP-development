@@ -26,23 +26,6 @@ const Stars = ({stars})=>{
       )
     }
     else return null;
-    // return(
-    //     <HStack space="none">
-    //        <Image source={require("../images/Star_fill.png")} style={{ width: 14, height: 14 }}/>
-    //        <Image source={require("../images/Star_fill.png")} style={{ width: 14, height: 14 }}/>
-    //        <Image source={require("../images/Star_fill.png")} style={{ width: 14, height: 14 }}/>
-    //        <Image source={require("../images/Star_fill.png")} style={{ width: 14, height: 14 }}/>
-    //        <Image source={require("../images/star_empty.png")} style={{ width: 14, height: 14 }}/>        
-    //     </HStack>
-    // )
-
-    // <HStack space="none">
-    //    <Image source={require("../images/Star_fill.png")} style={{ width: 14, height: 14 }}/>
-    //    <Image source={require("../images/Star_fill.png")} style={{ width: 14, height: 14 }}/>
-    //    <Image source={require("../images/Star_fill.png")} style={{ width: 14, height: 14 }}/>
-    //    <Image source={require("../images/Star_fill.png")} style={{ width: 14, height: 14 }}/>
-    //    <Image source={require("../images/star_empty.png")} style={{ width: 14, height: 14 }}/>        
-    // </HStack>
 }
 
 const styles = StyleSheet.create({

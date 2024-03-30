@@ -1,12 +1,11 @@
 import React from "react";
-import { SectionList, FlatList, StyleSheet, Text, View, Image, ScrollView } from "react-native";
+import { SectionList, FlatList, StyleSheet, Text } from "react-native";
 import SongListData from "../json/SongList.json";
 import SongListDetail from "./SongListDetail";
-import HotSongList from "./HotSongList";
 
 const SongList = () => {
 
-  const renderSectionHeader = ({ item, section , navigation}) => (
+  const renderSectionHeader = ({ section , navigation}) => (
     <>
       <Text style={styles.sectionHeader}>{section.title}</Text>
       <FlatList
@@ -16,38 +15,19 @@ const SongList = () => {
           showsHorizontalScrollIndicator={false}
           keyExtractor={ item => item.title }
       />
-      {/* {!section.star ? (
-        <FlatList
-          horizontal={true}
-          data={section.data}
-          renderItem={({ item }) => <HotSongList songList={item}/>}
-          showsHorizontalScrollIndicator={false}
-          keyExtractor={ item => item.title }
-        />
-      ) : null
-        // <SongListDetail songList={item} navigation={navigation}/>
-      
-      } */}
     </>
   );
   const renderItem = ({ item, section , navigation}) => {
-    // if (!section.star) {
-    //   return null;
-    // }
-    // return <SongListDetail songList={item} navigation={navigation}/>
-     return null
+    return null
   };
 
   return (
     <SectionList 
       sections={SongListData}
       contentContainerStyle={{ paddingHorizontal: 10 }}
-      // stickySectionHeadersEnabled={false}
-      // showsHorizontalScrollIndicator={false}
       renderSectionHeader={renderSectionHeader}
       renderItem={renderItem}
       keyExtractor={item => item.title}
-      
     />
   );
 };

@@ -1,6 +1,5 @@
 import React from "react";
 import { StyleSheet, ScrollView, Text, View, Image, Linking } from "react-native";
-import SongListData from "../json/SongList.json";
 import Stars from "../components/Stars.js";
 import { 
     HStack,
@@ -16,12 +15,11 @@ const DetailScreen = ({route}) => {
     const{
         title, 
         singer, 
-        url, 
-        date, 
         description, 
         image,
         stars,
         price,
+        url,
     } = route.params;
 
     return(
@@ -54,7 +52,7 @@ const DetailScreen = ({route}) => {
                     </View>
                 </View>
                 
-                <Button size="md" variant="solid" action="primary" style={style.btn}>
+                <Button size="md" variant="solid" action="primary" style={style.btn} onPress={()=>Linking.openURL(url)}>
                     <ButtonText style={style.btnText}>Buy Now for ${price}</ButtonText>
                 </Button>
 
@@ -78,10 +76,6 @@ const style = StyleSheet.create({
         width:360,
         height:164,
         margin:0,
-        // backgroundColor: '#fff',
-        // borderColor:'#000',
-        // borderWidth:2,
-        
         marginTop: 10,
         marginBottom:35,
     },

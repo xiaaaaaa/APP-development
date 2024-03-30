@@ -8,25 +8,24 @@ import {
     createDrawerNavigator,
     DrawerContentScrollView,
     DrawerItemList,
-    DrawerItem, 
 } from "@react-navigation/drawer";
 
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
-import {Divider, Image, Input, VStack, HStack, Text} from '@gluestack-ui/themed';
+import {Divider, Image, VStack, Text} from '@gluestack-ui/themed';
 
+//Home
 import SongListScreen from "../screens/SongListScreen";
 import DetailScreen from "../screens/DetailScreen";
-import AccountScreen from "../screens/AccountScreen";
-import SettingScreen from "../screens/SettingScreen";
 import WishListScreen from "../screens/WishListScreen";
 import MyBookScreen from "../screens/MyBookScreen";
+//drawer
+import AccountScreen from "../screens/AccountScreen";
+import SettingScreen from "../screens/SettingScreen";
+
 import MyTheme from "../Theme";
 
-import songListData from "../json/SongList.json"
-import { Colors } from "react-native/Libraries/NewAppScreen";
 import { Pressable } from "react-native";
-// import { color } from "native-base/lib/typescript/theme/styled-system";
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -45,14 +44,10 @@ const Navigation = () => {
 
 
 const CustomDrawerContent = (props) => {
-    const{colors} = useTheme();
-
     return(
         <DrawerContentScrollView {...props}
-            // contentContainerStyle = {{paddingTop:0}}
             backgroundColor = {"#fff"}
         >
-            
             <VStack style={styles.drawerHeader}>
                 <Image style={styles.drawerUserImage}
                     size="sm"
@@ -140,7 +135,7 @@ const MyDrawer = () => {
     );
 }
 
-const MyTabs = ({navigation}) => {
+const MyTabs = () => {
     const { colors } = useTheme();
 
     return(
@@ -211,6 +206,7 @@ const MyTabs = ({navigation}) => {
     );
 }
 
+//Tab
 const WishListStack = ({navigation}) => {
     return(
         <Stack.Navigator>
@@ -225,10 +221,10 @@ const WishListStack = ({navigation}) => {
                     },
                     headerLeft: () => (
                         <MaterialCommunityIcons
-                        name={'menu'}
-                        size={20}
-                        onPress={() => navigation.openDrawer()}
-                        style={{ marginRight: 20 }}
+                            name={'menu'}
+                            size={20}
+                            onPress={() => navigation.openDrawer()}
+                            style={{ marginRight: 20 }}
                         />
                     ),
                 }}
@@ -252,10 +248,10 @@ const MyBookStack = ({navigation}) => {
                     },
                     headerLeft: () => (
                         <MaterialCommunityIcons
-                        name={'menu'}
-                        size={20}
-                        onPress={() => navigation.openDrawer()}
-                        style={{ marginRight: 20 }}
+                            name={'menu'}
+                            size={20}
+                            onPress={() => navigation.openDrawer()}
+                            style={{ marginRight: 20 }}
                         />
                     ),
                 }}
@@ -265,7 +261,6 @@ const MyBookStack = ({navigation}) => {
     );
 }
 
-
 const HomeStack = ({navigation}) => {
     const [bookmark, setBookmark] = useState(0);
     return(
@@ -274,7 +269,6 @@ const HomeStack = ({navigation}) => {
                 name="Home"
                 component={SongListScreen}
                 options={{
-                    
                     title: "",
                     headerTitleStyle: {
                         fontWeight:'400',
@@ -290,7 +284,6 @@ const HomeStack = ({navigation}) => {
                         />
                     ),
                     headerRight:()=>(
-                        
                         <MaterialCommunityIcons 
                             name={'magnify'}
                             size={28}
@@ -298,13 +291,12 @@ const HomeStack = ({navigation}) => {
                         />
                     ),
                 }}
-                
             />
             <Stack.Screen 
                 name='Detail'
                 component={DetailScreen}
                 
-                options={({route}) => ({
+                options={() => ({
                     title: "",
                     headerStyle:{
                         backgroundColor: '#fff',
@@ -315,7 +307,6 @@ const HomeStack = ({navigation}) => {
                         fontWeight:'400',
                         fontSize:20
                     },
-                    
                     headerRight:()=>(
                         <Pressable onPress={()=>(bookmark>0? setBookmark(bookmark-1):setBookmark(bookmark+1))}>
                            {!bookmark>0?
@@ -339,8 +330,7 @@ const HomeStack = ({navigation}) => {
     );
 }
 
-
-
+//drawer
 const AccountStack = ({navigation}) =>{
     return(
         <Stack.Navigator>

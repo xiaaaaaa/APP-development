@@ -1,25 +1,18 @@
 import React from "react";
 import { StyleSheet, View, Text, Image, Pressable, Linking} from "react-native";
 import { useNavigation } from '@react-navigation/native';
-import { HStack } from "@gluestack-ui/themed";
 
 import Stars from "../components/Stars.js";
 import SongImage from "./SongImage.js";
 
 const SongListDetail = props => {
-    //const {thumbnail_image, title, singer, image} = props.songList;
     let {songList} = props;
-    const navigation = useNavigation();
 
     return(
       <View style={styles.bookList}>
         <View style={styles.card}>
             <SongImage detail={songList.detail} image={songList.image} songList={songList}/>
-            
-            
             <View style={styles.songName}>
-               
-                
                 <View style={styles.singerText}>
                     {/* <Stars stars={songList.stars} /> */}
                     <View style={styles.stars}>
@@ -43,23 +36,14 @@ const styles = StyleSheet.create({
       marginRight:20,
       display:'flex',
       justifyContent:'space-between',
-      
-      
     },
     card:{
-      
-      
       backgroundColor:'#fff',
-      
     },
-    
     songName:{
       flexDirection:'row',
       justifyContent:'flex-start',
-      
-      
     },
-    
     singerText:{
       
     },
