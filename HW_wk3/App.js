@@ -1,5 +1,5 @@
 import { SafeAreaView, StatusBar, StyleSheet, Text, View, Image, ScrollView } from 'react-native';
-import Header from './scr/components/Header';
+
 import SongList from './scr/components/SongList';
 import Navigation from './scr/navigation';
 import { GluestackUIProvider } from "@gluestack-ui/themed";

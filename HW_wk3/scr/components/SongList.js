@@ -6,10 +6,17 @@ import HotSongList from "./HotSongList";
 
 const SongList = () => {
 
-  const renderSectionHeader = ({section}) => (
+  const renderSectionHeader = ({ item, section , navigation}) => (
     <>
       <Text style={styles.sectionHeader}>{section.title}</Text>
-      {!section.star ? (
+      <FlatList
+          horizontal={true}
+          data={section.data}
+          renderItem={({ item }) => <SongListDetail songList={item} navigation={navigation}/>}
+          showsHorizontalScrollIndicator={false}
+          keyExtractor={ item => item.title }
+      />
+      {/* {!section.star ? (
         <FlatList
           horizontal={true}
           data={section.data}
@@ -17,15 +24,18 @@ const SongList = () => {
           showsHorizontalScrollIndicator={false}
           keyExtractor={ item => item.title }
         />
-      ) : null}
+      ) : null
+        // <SongListDetail songList={item} navigation={navigation}/>
+      
+      } */}
     </>
   );
   const renderItem = ({ item, section , navigation}) => {
-    if (!section.star) {
-      return null;
-    }
-    return <SongListDetail songList={item} navigation={navigation}/>
-    // return null
+    // if (!section.star) {
+    //   return null;
+    // }
+    // return <SongListDetail songList={item} navigation={navigation}/>
+     return null
   };
 
   return (
@@ -45,12 +55,14 @@ const SongList = () => {
 
 const styles = StyleSheet.create({
   sectionHeader: {
-    fontWeight: '600',
-    fontSize: 18,
+    fontWeight: '500',
+    fontSize: 24,
     paddingTop: 20,
     paddingBottom: 5,
-    paddingLeft: 10,
-    
+    paddingLeft: 0,
+    lineHeight:28,
+    marginBottom:16,
+    marginLeft:20,
   }
 })
 

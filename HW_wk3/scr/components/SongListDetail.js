@@ -1,85 +1,82 @@
 import React from "react";
 import { StyleSheet, View, Text, Image, Pressable, Linking} from "react-native";
 import { useNavigation } from '@react-navigation/native';
+import { HStack } from "@gluestack-ui/themed";
+
+import Stars from "../components/Stars.js";
+import SongImage from "./SongImage.js";
 
 const SongListDetail = props => {
     //const {thumbnail_image, title, singer, image} = props.songList;
     let {songList} = props;
     const navigation = useNavigation();
-    return(
-        <View style={styles.card}>
-            <Pressable onPress={() => navigation.navigate('Detail', songList)}>
-              <Image
-                  style={styles.songImage}
-                  source={{
-                      uri: songList.image
-                  }} 
-              />
-            </Pressable>
 
-            {/* <Image
-                style={styles.songImage}
-                source={{
-                    uri: songList.image
-                }} 
-            /> */}
+    return(
+      <View style={styles.bookList}>
+        <View style={styles.card}>
+            <SongImage detail={songList.detail} image={songList.image} songList={songList}/>
+            
             
             <View style={styles.songName}>
-                
+               
                 
                 <View style={styles.singerText}>
+                    {/* <Stars stars={songList.stars} /> */}
+                    <View style={styles.stars}>
+                      {songList.stars > 0? <Stars stars={songList.stars}/> : null}
+                    </View>
+                    
                     <Text style={styles.song}>{songList.title}</Text>
                     <Text style={styles.singer}>{songList.singer}</Text>
                 </View>
             </View>
         </View>
+      </View>
+        
     )
 };
 
 const styles = StyleSheet.create({
+    bookList:{
+      width:115,
+      marginLeft:20,
+      marginRight:20,
+      display:'flex',
+      justifyContent:'space-between',
+      
+      
+    },
     card:{
-      marginTop:0,
-      marginBottom:30,
-      marginLeft:10,
-      marginRight:10,
+      
+      
       backgroundColor:'#fff',
-      borderWidth:1,
-      borderRadius:9,
-      borderColor:'#fff',
-      shadowColor:'#435a5e',
-      shadowOffset: { width: 0, height: 20},
-      shadowOpacity: 0.1,
-      // Android Only
-      elevation: 10,
+      
     },
-    songImage:{
-      height:350,
-      width:null,
-      margin:20,
-    },
+    
     songName:{
       flexDirection:'row',
       justifyContent:'flex-start',
-      marginTop:0,
-      marginLeft:20,
-      marginRight:20,
-      marginBottom:20,
+      
       
     },
-    singerImage:{
-      height:50,
-      width:50,
-    },
+    
     singerText:{
-      flexDirection:'column',
-      justifyContent:'space-around',
-      marginLeft: 10,
+      
+    },
+    stars:{
+      
     },
     song:{
-      fontSize: 15,
+      width:140,
+      fontSize: 16,
+      fontWeight:'500',
+      color:'#131313',
+      marginBottom:5,
     },
     singer:{
       fontSize: 12,
+      fontWeight:'500',
+      color:'#666666',
     },
 });
 

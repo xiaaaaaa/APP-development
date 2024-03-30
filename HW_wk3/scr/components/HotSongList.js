@@ -1,8 +1,52 @@
 import React from "react";
 import { StyleSheet, Text, View, Image} from "react-native";
 
+import { HStack } from "@gluestack-ui/themed";
+
+
+const Stars = ({stars})=>{
+  const Starbox = [];
+
+  if(stars===3){
+    Starbox=[
+      <HStack space="none">
+        <Image source={require("../images/Star_fill.png")} style={{ width: 14, height: 14 }}/>
+        <Image source={require("../images/Star_fill.png")} style={{ width: 14, height: 14 }}/>
+        <Image source={require("../images/Star_fill.png")} style={{ width: 14, height: 14 }}/>
+        <Image source={require("../images/star_empty.png")} style={{ width: 14, height: 14 }}/>
+        <Image source={require("../images/star_empty.png")} style={{ width: 14, height: 14 }}/>        
+      </HStack>
+    ]
+    
+  }
+  else if(stars===4){
+    Starbox=[
+      <HStack space="none">
+        <Image source={require("../images/Star_fill.png")} style={{ width: 14, height: 14 }}/>
+        <Image source={require("../images/Star_fill.png")} style={{ width: 14, height: 14 }}/>
+        <Image source={require("../images/Star_fill.png")} style={{ width: 14, height: 14 }}/>
+        <Image source={require("../images/Star_fill.png")} style={{ width: 14, height: 14 }}/>
+        <Image source={require("../images/star_empty.png")} style={{ width: 14, height: 14 }}/>        
+      </HStack>
+    ]
+    
+  }
+  else null;
+
+  return(
+    {Starbox}
+  )
+
+  
+  
+};
+
 const HotSongList = props => {
     let { songList } = props;
+
+   
+
+
     return(
         <View style={{flexDirection:'column'}}>
             <View style={styles.card}>
@@ -20,6 +64,7 @@ const HotSongList = props => {
                         }} 
                     /> */}
                     <View style={styles.singerText}>
+                        {songList.star? <Stars stars={songList.stars}/> : null}
                         <Text style={styles.song}>{songList.title}</Text>
                         <Text style={styles.singer}>{songList.singer}</Text>
                     </View>
